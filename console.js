@@ -1,15 +1,14 @@
 //the js command directly used on chrome console
-//num, each time the continue button's id is different
-var num=4;
+ 
 //How much loop Time needed
-var loopTimes=1000;
+var loopTimes=5000;
 //Sleep between each loop
 var sleepMicroSecond=7050;
 
 
 
 var x = document.getElementsByClassName("goog-button-base-content");
-var element=x[num];
+var element=x[(x.length-1)];
 console.log(x);
   var dispatchMouseEvent = function(target, var_args) {
       var e = document.createEvent("MouseEvents");
@@ -20,7 +19,9 @@ console.log(x);
     };
  
   
- 
+ /**
+ main function
+ **/
 function c(){
 
    // Do something after the sleep!
@@ -43,11 +44,8 @@ function myLoop () {           //  create a loop function
            //  your code here
       i++;                     //  increment the counter
       if (i < loopTimes) {            //  if the counter < 10, call the loop function
-         myLoop();             //  ..  again which will trigger another 
-		 
-		  
-
-		 c();
+         myLoop();             //  ..  again which will trigger another  
+		 c();		//  Main function
       }                        //  ..  setTimeout()
    }, sleepMicroSecond)
 }
