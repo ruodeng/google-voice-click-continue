@@ -2,23 +2,9 @@
 //How much loop Time needed
 var loopTimes=5000;
 //Sleep between each loop
-var sleepMicroSecond=7050;
+var sleepMicroSecond=31050;
 
-
-
-var x = document.getElementsByClassName("goog-button-base-content");
-var element=x[(x.length-1)];
-
-
-
-
-//the js command directly used on chrome console
  
-//How much loop Time needed
-var loopTimes=5000;
-//Sleep between each loop
-var sleepMicroSecond=7050;
-
 
 
 var x = document.getElementsByClassName("goog-button-base-content");
