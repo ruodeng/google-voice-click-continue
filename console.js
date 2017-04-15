@@ -1,3 +1,17 @@
+ 
+//How much loop Time needed
+var loopTimes=5000;
+//Sleep between each loop
+var sleepMicroSecond=7050;
+
+
+
+var x = document.getElementsByClassName("goog-button-base-content");
+var element=x[(x.length-1)];
+
+
+
+
 //the js command directly used on chrome console
  
 //How much loop Time needed
@@ -9,7 +23,7 @@ var sleepMicroSecond=7050;
 
 var x = document.getElementsByClassName("goog-button-base-content");
 var element=x[(x.length-1)];
-console.log(x);
+ 
   var dispatchMouseEvent = function(target, var_args) {
       var e = document.createEvent("MouseEvents");
       // If you need clientX, clientY, etc., you can call
@@ -23,14 +37,14 @@ console.log(x);
  main function
  **/
 function c(){
-
-   // Do something after the sleep!
+if('Continue »'==element.innerHTML){
+ // Do something after the sleep!
 	 dispatchMouseEvent(element, 'mouseover', true, true);
     dispatchMouseEvent(element, 'mousedown', true, true);
     dispatchMouseEvent(element, 'click', true, true);
     dispatchMouseEvent(element, 'mouseup', true, true);
  
-
+} 
 }
 
  
